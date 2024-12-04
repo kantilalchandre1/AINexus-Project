@@ -1,0 +1,12 @@
+class Test:
+    sample = "Demo" # public
+    _admin = 'admin@123' # protected
+    __python = 'confential data' # private
+    def __m1(self):
+        print("in self class:",Test.sample)
+        print("in self class:",Test._admin)
+
+obj = Test()
+obj._Test__m1()
+
+# Name Mangling
